@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                       // Set the target to ES6 for better performance and modern JS features
+    "module": "commonjs",                   // CommonJS module format for Node.js
+    "moduleResolution": "node",             // Use Node's module resolution strategy
+    "outDir": "./dist",                     // Output directory for compiled JavaScript
+    "rootDir": "./src",                     // Root directory for TypeScript source files
+    "esModuleInterop": true,                // Allow default imports from modules that don't have a default export
+    "skipLibCheck": true,                   // Skip checking of declaration files for speed
+    "strict": true,                         // Enable strict type checking options
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing of file names
+    "resolveJsonModule": true,              // Allow importing JSON files
+    "noImplicitAny": false                  // Disallow usage of 'any' type in most cases (optional, but good practice)
+  },
+  "include": [
+    "src/**/*"                              // Include all files in the 'src' directory
+  ],
+  "exclude": [
+    "node_modules",                         // Exclude the 'node_modules' folder from compilation
+    "dist"                                  // Exclude the 'dist' folder from compilation
+  ]
+}

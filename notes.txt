@@ -1,3 +1,0 @@
-make web with visuals where you can draw a pattern, run a test on it how it behaves
-1. we can run py in background to get specific result
-2. we can run it via web
