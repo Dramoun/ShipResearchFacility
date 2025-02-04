@@ -17,7 +17,7 @@ export const createUser = (name: string, email: string) => {
   });
 };
 
-export const getUsers = () => {
+export const getUsers = () : Promise<Array<any>> =>  {
   return new Promise<any[]>((resolve, reject) => {
     db.all('SELECT * FROM users', (err, rows) => {
       if (err) reject(err);
